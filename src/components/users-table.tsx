@@ -12,8 +12,8 @@ type User = {
 	firtsName?: string,
 	lastName?: string,
 	lastSignInAt: number,
-	emailAddress: {id: number, emailAddress: string}[],
-	[key: string]: any
+	emailAddress: {id: number, emailAddress: string, [key: string] : any;}[],
+	[key: string]: any;
 };
 
 export function UsersTable({data} : {data: User[]}) {
