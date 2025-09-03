@@ -4,7 +4,7 @@ import UsersTable from "@/components/users-table";
 
 const metrics: Metric[] = [
 	{
-		titlr: "Users",
+		title: "Users",
 		value: 5000,
 		change: "+50 from last month",
 		icon: <Users className="h-4 w-4 text-muted-foreground" />
