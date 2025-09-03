@@ -1,6 +1,6 @@
 import {MetricCards, type Metric} from "@/components/metric-cards";
 import {Users, DollarSign, CreditCard, Activity} from "lucide-react";
-import UsersTable from "@/components/users-table";
+import {UsersTable, type User} from "@/components/users-table";
 
 const metrics: Metric[] = [
 	{
@@ -29,6 +29,57 @@ const metrics: Metric[] = [
 	}
 ];
 
+const users: User[] = [
+	{
+		id: 1,
+		firstName: "ucup",
+		lastName: "surucup",
+		lastSignInAt: 170000,
+		emailAddress: [
+			{
+				id: 401,
+				emailAddress: "surucup12@gmail.com"
+			}
+		]
+	},
+	{
+		id: 2,
+		firstName: "jonny",
+		lastName: "bansos",
+		lastSignInAt: 170000,
+		emailAddress: [
+			{
+				id: 411,
+				emailAddress: "jonnysos@gmail.com"
+			}
+		]
+	},
+	{
+		id: 3,
+		firstName: "ujang",
+		lastName: "surujang",
+		lastSignInAt: 170000,
+		emailAddress: [
+			{
+				id: 420,
+				emailAddress: "surujang@mail.com"
+			}
+		]
+	},
+	{
+		id: 4,
+		firstName: "otong",
+		lastName: "surotongs",
+		lastSignInAt: 170000,
+		emailAddress: [
+			{
+				id: 4110,
+				emailAddress: "surotongs@gmail.com"
+			}
+		]
+	},
+];
+
 export default function Home() {
 
   return (
@@ -39,7 +90,7 @@ export default function Home() {
 			<MetricCards metrics={metrics} />
 			
 			<div >
-			  <UsersTable />
+			  <UsersTable users={users}/>
 			</div>
 		</main>
   );
