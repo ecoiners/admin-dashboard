@@ -24,7 +24,7 @@ export function MetricCards({metrics} : {metrics: Metric[]}) {
 							{metric.icon ? metric.icon : null}
 						</CardHeader>
 						<CardContent >
-						  <div className="text-2xl font-bold">{metric.valud}</div>
+						  <div className="text-2xl font-bold">{metric.value}</div>
 							{metric.change && <p className="text-xs text-muted-foreground">{metric.change}</p>}
 						</CardContent>
 					</Card>
