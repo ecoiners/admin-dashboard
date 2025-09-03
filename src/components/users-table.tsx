@@ -16,7 +16,7 @@ type User = {
 	[key: string]: any
 };
 
-export default function UsersTable({data} : {data: User[]}) {
+export function UsersTable({data} : {data: User[]}) {
 	
 	return (
 		<Table>
