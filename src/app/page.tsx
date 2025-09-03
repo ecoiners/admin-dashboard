@@ -90,7 +90,7 @@ export default function Home() {
 			<MetricCards metrics={metrics} />
 			
 			<div >
-			  <UsersTable users={users}/>
+			  <UsersTable data={users}/>
 			</div>
 		</main>
   );
