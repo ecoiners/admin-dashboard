@@ -1,7 +1,9 @@
 import Link from "next/link";
 import {
 	Card,
-	CardContent
+	CardContent,
+	CardDescription,
+	CardTitle
 } from '@/components/ui/card';
 
 export function AddBanner() {
