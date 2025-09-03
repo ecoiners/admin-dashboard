@@ -12,7 +12,7 @@ export type Metric = {
 	icon?: React.ReactNode
 };
 
-export default function MetricCards({metrics} : {metrics: Metric[]}) {
+export function MetricCards({metrics} : {metrics: Metric[]}) {
 	
 	return (
 		<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

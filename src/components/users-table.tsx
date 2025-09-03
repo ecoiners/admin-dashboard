@@ -17,6 +17,9 @@ export default function UsersTable() {
 					<TableHead>Last Seen</TableHead>
 				</TableRow>
 			</TableHeader>
+			<TableBody>
+			
+			</TableBody>
 		</Table>
 	);
 };
