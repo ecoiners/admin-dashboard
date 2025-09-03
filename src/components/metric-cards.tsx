@@ -18,7 +18,7 @@ export function MetricCards({metrics} : {metrics: Metric[]}) {
 		<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
 		  {
 				metrics.map((metric, index) => (
-					<Card key={index}>
+					<Card key={index} className="bg-gray-600/40 border-none rounded-md">
 					  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
 						  <CardTitle className="text-sm font-medium">{metric.title}</CardTitle>
 							{metric.icon ? metric.icon : null}

@@ -1,31 +1,32 @@
 import {MetricCards, type Metric} from "@/components/metric-cards";
 import {Users, DollarSign, CreditCard, Activity} from "lucide-react";
 import {UsersTable, type User} from "@/components/users-table";
+import AddBanner from "@/components/add-banner";
 
 const metrics: Metric[] = [
 	{
 		title: "Users",
 		value: 5000,
 		change: "+50 from last month",
-		icon: <Users className="h-4 w-4 text-muted-foreground" />
+		icon: <Users className="h-4 w-4 text-pink-500" />
 	},
 	{
 		title: "Subscriptions",
 		value: 3000,
 		change: "+100 from last day",
-		icon: <CreditCard className="h-4 w-4 text-muted-foreground" />
+		icon: <CreditCard className="h-4 w-4 text-pink-500" />
 	},
 	{
 		title: "Revenue",
 		value: "$100",
 		change: "+200 from last year",
-		icon: <DollarSign className="h-4 w-4 text-muted-foreground" />
+		icon: <DollarSign className="h-4 w-4 text-pink-500" />
 	},
 	{
 		title: "Last month subscriptions",
 		value: 30,
 		change: "+10 from last weeks",
-		icon: <Activity className="h-4 w-4 text-muted-foreground" />
+		icon: <Activity className="h-4 w-4 text-pink-500" />
 	}
 ];
 
@@ -88,6 +89,10 @@ export default function Home() {
 			  Dashboard
 			</h1>
 			<MetricCards metrics={metrics} />
+			
+			<div>
+			  <AddBanner />
+			</div>
 			
 			<div >
 			  <UsersTable data={users}/>
