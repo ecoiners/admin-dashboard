@@ -1,7 +1,7 @@
 import {MetricCards, type Metric} from "@/components/metric-cards";
 import {Users, DollarSign, CreditCard, Activity} from "lucide-react";
 import {UsersTable, type User} from "@/components/users-table";
-import AddBanner from "@/components/add-banner";
+import {AddBanner} from "@/components/add-banner";
 
 const metrics: Metric[] = [
 	{
