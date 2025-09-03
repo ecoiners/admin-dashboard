@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/table";
 
 // Define proper types without using 'any'
-type EmailAddress = {
+export type EmailAddress = {
   id: number;
   emailAddress: string;
 };
 
-type User = {
+export type User = {
   id: number;
   firstName?: string;
   lastName?: string;
