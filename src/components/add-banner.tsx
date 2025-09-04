@@ -14,7 +14,7 @@ export function AddBanner() {
 		  <Link href="/" className="block h-full">
 			  <CardContent className="p-0 h-full flex flex-row items-center">
 				  <div className="relative h-full w-1/2">
-					  <Image rounded={"lg"} objectfit="cover" width={200} height={200} src="/logo.png" layout="fill" alt="logo mobile"/>
+					  <Image objectfit="cover" width={200} height={200} src="/logo.png" layout="fill" alt="logo mobile"/>
 					</div>
 					<div className="p-4 w-1/2">
 					  <CardTitle>Download Our App!</CardTitle>
